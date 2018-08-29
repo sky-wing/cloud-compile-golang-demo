@@ -29,8 +29,8 @@ compile() {
 
 prepare_package() {
     ${MKDIR} $OUTPUT
-    ${MKDIR} $OUTPUT/{bin,etc,log}
-    $CP bin etc log $OUTPUT
+    ${MKDIR} $OUTPUT/{bin,etc}
+    $CP bin etc $OUTPUT
 }
 
 main() {
