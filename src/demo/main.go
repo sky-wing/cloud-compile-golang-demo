@@ -6,8 +6,13 @@ import (
 
 type handler struct{}
 
+func GetTitle() string {
+	return "欢迎使用京东云-云翼平台"
+}
+
 func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("欢迎使用京东云-云翼平台"))
+	title := GetTitle()
+	w.Write([]byte(title))
 }
 
 func main() {

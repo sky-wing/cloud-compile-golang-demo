@@ -8,6 +8,7 @@ export LANG="en_US.UTF-8"
 
 readonly WORKSPACE=$(pwd)
 readonly PACKAGE_NAME="demo"
+readonly OUTPUT="$WORKSPACE/output"
 
 readonly GO_TEST="go test"
 
@@ -17,8 +18,9 @@ log() {
 
 testStak() {
     (
+        mkdir -p $OUTPUT
         export GOPATH=${WORKSPACE}
-        ${GO_TEST} ${PACKAGE_NAME}/...
+        ${GO_TEST} ${PACKAGE_NAME}/... | tee $OUTPUT/report.txt
     )
 }
 
