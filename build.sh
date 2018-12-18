@@ -29,7 +29,7 @@ compile() {
 
 prepare_package() {
     ${MKDIR} $OUTPUT
-    ${MKDIR} $OUTPUT/{bin,etc}
+    ${MKDIR} $OUTPUT/{bin,etc,log}
     $CP bin etc $OUTPUT
 }
 
