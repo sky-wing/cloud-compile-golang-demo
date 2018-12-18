@@ -7,7 +7,7 @@ import (
 type handler struct{}
 
 func GetTitle() string {
-	return "欢迎使用京东云-云翼平台"
+	return `<h1 align="center">欢迎使用京东云-流水线</h1>`
 }
 
 func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {

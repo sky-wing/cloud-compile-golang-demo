@@ -12,7 +12,7 @@ func TestGetTitle(t *testing.T) {
 		// TODO: Add test cases.
 		{
 			name: "Test 1",
-			want: "欢迎使用京东云-云翼平台",
+			want: `<h1 align="center">欢迎使用京东云-流水线</h1>`,
 		},
 	}
 	for _, tt := range tests {
