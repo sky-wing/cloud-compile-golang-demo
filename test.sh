@@ -27,7 +27,7 @@ testStak() {
 main() {
     log "start test..."
     testStak
-    log "end test"
+    log "end test 12"
 }
 
 main
