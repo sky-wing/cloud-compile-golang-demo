@@ -18,7 +18,7 @@ log() {
 
 testStak() {
     (
-        mkdir -p $OUTPUT
+        mkdir -p $OUTPUT 
         export GOPATH=${WORKSPACE}
         ${GO_TEST} ${PACKAGE_NAME}/... | tee $OUTPUT/report.txt
     )
